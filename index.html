@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Premanshu</title>
+ 
+<link rel="shortcut icon" class="iconlogo" type="image/jpg" href="android-chrome-192x192.png"/>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <!--header-->
+    <header class="header" id="header">
+        <a href="#" class="logo"><u>Premanshu</u></a>
+
+        <div class="toggle-container">
+          <label class="switch">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider round"></span>
+          </label>
+      </div>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Trainings</a>
+            <a href="#project">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experiences</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        
+    </header>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      themeToggle.addEventListener("change", () => {
+          if (themeToggle.checked) {
+              body.classList.add("dark");
+          } else {
+              body.classList.remove("dark");
+          }
+      });
+
+      // Check the user's preferred theme and set it if available
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          themeToggle.checked = true;
+          body.classList.add("dark");
+      }
+
+    </script>
+
+
+
+
+    <!--home section --> 
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3><span class="hello">Hello,</span>     It's Me <span class="wave">👋</span></h3>
+                <h1>Premanshu Ray<i class='bx bxs-smile' id="smile" ></i></h1>
+           <!-- <h3>And I'm a <span>Frontend Developer ...</span><i class='bx bxs-plane-alt' style='color:#ffffff' ></i></h3>-->
+            <p>I am interested in the role of a Software Engineer where 
+              I can contribute my analytical skills and knowledge acquired by pursuing my degree in Software Engineering. 
+              Looking for a dynamic and progressive company where my skills are utilized in the maximum way possible.</p>
+          <div class="social-media">
+             <a href="https://github.com/Prem-Ray" target="_blank"><i class='bx bxl-github'  ></i></a>
+             <a href="https://x.com/RayPremanshu" target="_blank"><i class='bx bxl-twitter'  ></i></a>
+             <a href="https://www.instagram.com/premanshuray/" target="_blank"><i class='bx bxl-instagram-alt'   ></i></a>
+             <a href="https://www.linkedin.com/in/premanshuray/" target="_blank"><i class='bx bxl-linkedin'   ></i></a>
+          </div>  
+          <a href="#about" class="btn">Read More<i class='bx bx-chevrons-right bx-fade-right'   ></i></a>
+        </div>
+        <div class="home-img">
+            <img src="portimg.jpeg" alt="" height="300px">
+        </div>
+    </section>
+
+
+
+
+    <!--About Section-->
+    <section class="about" id="about">
+        
+        <div class="about-img">
+            <img src="prem.jpg" alt="avi" height="400px"  >
+            <h3 class="alphaaa"> <span><</span> 🚀 <span>/></span></h3>
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading"><i class="fa-solid fa-user"></i> About <span>Me</span></h2>
+            <h3>💡Electronics & Communication Engineer💡</h3>
+            
+             <p>I am an enthusiastic fresher with highly motivated having bachelors of technology degree in Electronics & Communication Engineering from St. Thomas’ College of Engineering & Technology. My aim is to learn new technologies and to start up my career by utilizing my skills and abilities as well as being resourceful,innovative and flexible while working in a challenging position , where I will be able to apply my experiences in projects. </p>
+        
+       
+        <a href="https://drive.google.com/file/d/11m9ofQ8bFC7__YYYPDCstl5DTSQ8kXp_/view?usp=drive_link" target="_blank" class="btn">Resume <i class='bx bxs-cloud-download' style='color:#000000' ></i></a>
+    </div>
+    </section>
+
+
+
+     <!--Professional Training section-->
+    <section class="services" id="services">
+        <h2 class="heading"><i class='bx bxs-book-open'></i>Professional <span>Training</span></h2>
+        <div class="services-container">
+
+
+            <div class="services-box">
+                <img src="pblogo.png" alt="">
+                <h3><span class="trainingabc">PRASAR BHARATI </span></h3>
+                <p>I have completed my industrial training at Prasar Bharati, India's esteemed Public Service Broadcaster , Akashvani , Kolkata. It gave me an opportunity to do a 4 weeks vocational training on "Radio Communication Systems or Transmission System of All India Radio". I have learnt from the training about AM and FM Trasnmission System. During this training I was also trained at the installations of studios. High Power Medium Wave Transmitters, FM Transmitters, Captive Earth Station and acquainted with the different aspect of electronics electrical equipments used in A.M/F. Mand Satellite Broadcasting.</p>
+                <a href="https://drive.google.com/file/d/10MtDp_dGMDhRXGQnXzfMVh8eL6A_he4I/view" target="_blank" class="btn" id="certificate">Certificate<i class='bx bx-expand-vertical bx-burst'   ></i>  </a>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!--project section design-->
+    <section class="project" id="project">
+        <h2 class="heading"><i class="fa-solid fa-clipboard-list"></i>Latest <span>Projects</span></h2>
+        <div class="project-container">
+
+          <div class="project-box">
+            <img src="razorpay.png" alt=""   >
+            <div class="project-layer">
+                <h3> Razorpay-clone Web Development Project</h3>
+                <h2>It's a Completely responsive website for Laptop and Tab.</h2>
+                <h2><span>Tech Stack :-</span> HTML,CSS,TAILWIND CSS.</h2>
+                <a href="https://github.com/Prem-Ray/Razorpay_Clone"><i class="bx bx-link-external"></i></a>
+            </div>
+        </div>
+
+
+            <div class="project-box">
+                <img src="usability.png" alt="">
+                <div class="project-layer">
+                    <h3>Usability-Hub Clone</h3>
+                    <h2>It's a Completely responsive website for Laptop , Tab and also Mobile.</h2>
+                    <h2><span>Tech Stack :-</span> HTML,CSS.</h2>
+                    <a href="https://github.com/Prem-Ray/Usability-Hub"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+  
+            <div class="project-box">
+                <img src="netflix.png" alt=""  >
+                <div class="project-layer">
+                    <h3>Netflix Clone</h3>
+                    <h2>It's a Completely responsive website only for Laptop .</h2>
+                    <h2><span>Tech Stack:-</span>HTML,CSS</h2>
+                    <a href="https://github.com/Prem-Ray/Netflix_Clone"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--skillsection-->
+     
+<section class="skill-sec" id="skills">
+   
+    <h2 class="heading"><i class="fa-solid fa-laptop-code"></i>My <span>Skills</span></h2>
+
+
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="html-5--v1.webp">
+        </div>
+        
+        <h3>HTML</h3>
+          
+ 
+          
+        </div>
+      </div>
+    
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="css3.webp">
+        </div>
+         <h3>CSS</h3>
+        </div>
+      </div>
+
+      <div class="skill-content">
+        <div class="skill-content-content">
+          <div class="skill-content-img">
+            <img src="talwindcss.png" >
+          </div>
+          
+          <h3>Tailwind CSS</h3>
+        </div>
+      </div>
+     
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="javascript--v1.webp">
+        </div>
+        
+        <h3>Basic JS</h3>
+      </div>
+    </div>
+
+
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="c++_img-removebg-preview.png">
+        </div>
+        
+        <h3>C++ Language</h3>
+      </div>
+    </div>
+
+    <div class="skill-content">
+      <div class="skill-content-content">
+        <div class="skill-content-img">
+          <img src="c_image-removebg-preview.png">
+        </div>
+        
+        <H3>C Language</H3>
+      </div>
+    </div>
+
+    
+    
+  
+</section>
+
+
+
+
+     <!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="stcet.jpg" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Technology in Electronics & Communication Engineering</h3>
+        <p>St. Thomas’ College of Engineering & Technology </p>
+        <h4>2021-2025 | Pursuing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="saorahs.jpg" alt="">
+      </div>
+      <div class="content">
+      <h3>12th Science | Higher Secondary</h3>
+      <p>Chandrakona Jirat High school | WBCHSE </p>
+      <h4>2019-2021 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+
+
+
+    <!--Contact-->
+    <section class="Contact" id="Contact">
+        <h2 class="heading"><i class='bx bx-headphone'></i>Contact <span> Me!</span></h2>
+        <div class="contact-details">
+        <!-- <div class="contact-img">
+            <img src="contact.png" alt="" height="300px">
+        </div> -->
+        <div class="contact-content">
+        
+        
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name*">
+                <input type="email" placeholder="Email Address*">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number*">
+                <input type="text" placeholder="Email Subject*">
+            </div>
+            <textarea name="" id="" cols="50" rows="10" placeholder="Your Message*"></textarea>
+            <input type="submit" value="Say Hello 👋🏿" class="btn">
+        
+        </form>
+    </div>
+</div>
+    <div class="ptr">
+    <div class="width-33">
+        <h2>
+            <i class='bx bx-home-heart' style="color: rgb(236, 189, 112);"></i>
+        </h2>
+        <h4>Address</h4>
+        <p>Arambagh,</p>
+        <p>West Bengal,India,712616</p>
+      </div>
+     
+      <div class="width-33">
+        <h2>
+            <i class='bx bxs-phone-call' style="color:rgb(236, 189, 112);"  ></i>
+        </h2>
+        <h4>Contact</h4>
+        <p>+91 7047466142</p>
+          <p>premanshuray981@gmail.com</p>
+      </div>
+      
+    </div>
+     
+     
+    </section>
+
+
+
+
+
+    <!--footer-->
+    <div class="footer" id="footer">
+        <div class="footer-text">
+            <p>Made with ❤️ by <span>@Premanshu</span><a href="#home"><i class="bx bx-up-arrow-alt" style="color: coral;"></i></a></p>
+            
+        </div>
+    </div>
+
+
+     
+
+
+
+
+
+
+
+
+    
+
+    
+</body>
+ 
+ 
+    
+
+ 
