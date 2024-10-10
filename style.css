@@ -192,7 +192,6 @@ section{
     border: .2rem solid var(--main-color);
     border-radius: 80%;
     box-shadow: 0 0 2rem var(--main-color);
-    filter:grayscale(10%) ;
 }
 
 .home-img :hover{
