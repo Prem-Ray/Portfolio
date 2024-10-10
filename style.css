@@ -273,8 +273,7 @@ section{
 .about-img img{
     border: 1rem solid rgb(24, 20, 28);
     border-radius: 5%;
-    
-
+    filter:contrast(111%) ;
 }
 .alphaaa:hover{
     color: #fff;
@@ -282,7 +281,7 @@ section{
 }
 .about-img :hover{
     transform: translateY(-20px);
-    filter: grayscale(50%);
+    filter: grayscale(100%);
 }
 .heading{
     text-align: center;
